@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr" translate="no">
+<head>
+    <meta charSet="utf-8"/>
+    <title>Kayls Fried Chicken Menu | Jaranwala Online Ordering</title>
+    <link rel="apple-touch-icon" href="https://g-cdn.blinkco.io/ordering-system/55917/favicon/1742233703.png"/>
+    <link rel="shortcut icon" href="https://g-cdn.blinkco.io/ordering-system/55917/favicon/1742233703.png" type="image/x-icon" sizes="196x196"/>
+    <link rel="canonical" href="https://www.kaylsfriedchicken.com.pk/"/>
+    <meta name="description" content="Order Kayls Fried Chicken delivery in Jaranwala now! ✔️ Superfast food delivery to your home or office ✔️ Check menu, prices, and locations ✔️ Fast order & easy payment."/>
+    <meta name="keywords" content="Kayls Fried Chicken Jaranwala, restaurants near me, food near me, best fast food in Jaranwala"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+    <meta id="indexKey" name="robots" content="index, follow"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:url" content="https://www.kaylsfriedchicken.com.pk/"/>
+    <meta property="og:title" content="Kayls Fried Chicken Menu | Jaranwala Online Ordering"/>
+    <meta property="og:description" content="Order Kayls Fried Chicken delivery in Jaranwala now! ✔️ Superfast food delivery to your home or office"/>
+    <meta property="twitter:title" content="Kayls Fried Chicken Menu | Jaranwala Online Ordering"/>
+    <meta property="twitter:description" content="Order Kayls Fried Chicken delivery in Jaranwala now!"/>
+    <meta property="theme-color" content="#f7c431"/>
+</head>
+<body>
+    <div id="__next">
+        <div style="display:none"><h1>Kayls Fried Chicken</h1></div>
+        <div style="position:relative">
+            <div class="root">
+                <!-- Website Content & Menu Skeletons -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Updated Next.js Data Configuration -->
+    <script id="__NEXT_DATA__" type="application/json">
+    {
+      "props": {
+        "pageProps": {
+          "config": {
+            "restId": 55917,
+            "host": "www.kaylsfriedchicken.com.pk",
+            "appName": "kayls",
+            "name": "Kayls Fried Chicken",
+            "tags": "Burger,Fried Chicken,Fast Food,Jaranwala",
+            "currency_symbol": "Rs.",
+            "currency": "PKR",
+            "timezone": "Asia/Karachi",
+            "appConfig": {
+              "hostName": "www.kaylsfriedchicken.com.pk"
+            }
+          }
+        }
+      }
+    }
+    </script>
+
+    <!-- Admin Login & Real-Time Notification Script -->
+    <script src="https://cdn.socket.io/4.5.4/socket.io.min.js"></script>
+    <script>
+        // Admin Login Simulation (admin@gmail.com / adminadmin)
+        function adminLogin(email, password) {
+            if (email === "admin@gmail.com" && password === "adminadmin") {
+                localStorage.setItem("isAdminAuthenticated", "true");
+                alert("Admin Login Successful!");
+                window.location.href = "/admin-dashboard";
+            } else {
+                alert("Invalid Admin Credentials!");
+            }
+        }
+
+        // Real-time Order Notification for Admin PC
+        const socket = io("https://your-backend-server.com");
+        socket.on("newOrderReceived", function(order) {
+            // Play notification sound
+            let audio = new Audio("https://actions.google.com/sounds/v1/alarms/beep_short.ogg");
+            audio.play().catch(e => console.log("Audio play blocked"));
+            
+            // Show alert popup on Admin PC
+            console.NewOrder(`New Order from Jaranwala! Item: ${order.items} - Total: Rs. ${order.total}`);
+        });
+    </script>
+</body>
+</html>
